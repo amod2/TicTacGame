@@ -95,8 +95,8 @@ Dialog dialog;
                     @Override
                     public void onClick(View v) {
                         Intent in=new Intent(getApplicationContext(),MainActivity.class);
-                        finish();
                         startActivity(in);
+                        finish();
                         dialog.dismiss();
                     }
                 });
@@ -128,6 +128,7 @@ Dialog dialog;
                 Intent in=new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(in);
                 dialog.dismiss();
+                finish();
             }
         });
         btn.setOnClickListener(new View.OnClickListener() {
@@ -136,6 +137,7 @@ Dialog dialog;
             Intent in=new Intent(getApplicationContext(),MainActivity.class);
              startActivity(in);
                 dialog.dismiss();
+                finish();
             }
         });
         dialog.show();

@@ -9,13 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZeroCrossGame">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SinglePlay2"
+            android:exported="false" />
+        <activity
+            android:name=".SinglePlay"
+            android:exported="false" />
+        <activity
+            android:name=".GameOptions"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@
     android:layout_width="350dp"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/white">
+    android:background="@color/purple_700">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -16,23 +16,22 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/purple_200">
+            android:background="#934F4F">
 
             <TextView
                 android:id="@+id/id_winner2"
-                android:layout_width="290dp"
-                android:layout_height="53dp"
+                android:layout_width="288dp"
+                android:layout_height="65dp"
                 android:gravity="center"
-                android:text="You won Game"
+                android:text=""
                 android:textColor="#FFC107"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.171" />
+                app:layout_constraintVertical_bias="0.184" />
 
             <ImageView
                 android:id="@+id/cancel"
@@ -65,10 +64,10 @@
                 android:layout_height="176dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.371"
+                app:layout_constraintVertical_bias="0.394"
                 app:srcCompat="@drawable/trofi1" />
 
             <TextView
@@ -83,8 +82,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3"
-                app:layout_constraintVertical_bias="0.326" />
+                app:layout_constraintTop_toBottomOf="@+id/id_winner2" />
 
             <ImageView
                 android:id="@+id/btn_restart"
@@ -95,7 +93,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3"
-                app:layout_constraintVertical_bias="0.126"
+                app:layout_constraintVertical_bias="0.265"
                 app:srcCompat="@drawable/ic_restart" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
